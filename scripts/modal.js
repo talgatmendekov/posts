@@ -1,31 +1,31 @@
-const modalWindowWrapper = document.createElement('div')
-modalWindowWrapper.className = 'modalWindowWrapper'
+const modalWindowWrapper = document.createElement("div");
+modalWindowWrapper.className = "modalWindowWrapper";
 
-const modalWindowContainer = document.createElement('div')
-modalWindowContainer.className = 'modalWindowContainer'
+const modalWindowContainer = document.createElement("div");
+modalWindowContainer.className = "modalWindowContainer";
 
-const deleteModalWindow = document.createElement('div')
-deleteModalWindow.className = 'deleteModalWindow'
+const deleteModalWindow = document.createElement("div");
+deleteModalWindow.className = "deleteModalWindow";
 
-const editModalWindow = document.createElement('div')
-editModalWindow.className = 'editModalWindow'
+const editModalWindow = document.createElement("div");
+editModalWindow.className = "editModalWindow";
 
-const confirmText = document.createElement('h2')
-confirmText.className = 'confirmText'
+const questionText = document.createElement("h2");
+questionText.className = "questionText";
 
-const emailField = document.createElement('input')
-emailField.className = 'textFieldMsg'
+const emailField = document.createElement("input");
+emailField.className = "textFieldMW";
 
-const nameField = document.createElement('input')
-nameField.className = 'textFieldMsg'
+const nameField = document.createElement("input");
+nameField.className = "textFieldMW";
 
-const bodyField = document.createElement('input')
-bodyField.className = 'textFieldMsg'
+const bodyField = document.createElement("input");
+bodyField.className = "textFieldMW";
 
-const editBtn = document.createElement('button')
-editBtn.className = 'editBtn'
-editBtn.innerText = 'edit'
+const editAgreeBtn = document.createElement("button");
+editAgreeBtn.className = "editAgreeBtn";
+editAgreeBtn.innerText = "edit";
 
-const deleteBtn = document.createElement('button')
-deleteBtn.className = 'deleteBtn'
-deleteBtn.innerText = 'delete'
+const deleteAgreeBtn = document.createElement("button");
+deleteAgreeBtn.className = "deleteAgreeBtn";
+deleteAgreeBtn.innerText = "delete";

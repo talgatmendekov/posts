@@ -94,7 +94,7 @@
     width: 300px;
     margin: 0 auto;
     height: 100vh;
-    left: 15%;
+    left: 50%;
     position: fixed;
     z-index: 30;
     backdrop-filter: blur(5px);

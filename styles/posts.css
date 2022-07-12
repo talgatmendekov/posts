@@ -294,7 +294,7 @@ body {
   }
   .postBody {
     text-overflow: ellipsis;
-    height: 40px;
+    height: 100px;
     word-wrap: break-word;
   }
 }

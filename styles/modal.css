@@ -106,22 +106,19 @@
     width: 450px;
     min-height: 100vh;
   }
-}
-@media screen and (max-width: 450px) {
-    .modalWindowContainer {
-        min-width: 50%;
-        background-color: white;
-        position: fixed;
-      
-}
-@media screen and (max-width: 450px) {
+  .modalWindowContainer {
+    min-width: 50%;
+    background-color: white;
+    position: fixed;
+  }
+
   .questionText {
     width: 70%;
   }
+
+  .textFieldMW {
+    width: 65%;
+  }
 }
 
-@media screen and (max-width: 450px) {
-    .textFieldMW {
-      width: 65%;
-    }
-  }
+

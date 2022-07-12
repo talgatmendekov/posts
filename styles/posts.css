@@ -7,7 +7,7 @@
 body {
   background-image: url("../images/train.gif");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .header {
@@ -21,8 +21,8 @@ body {
 }
 
 .search {
-  width: 50%;
-  height: 50px;
+  width: 40%;
+  height: 40%;
   display: flex;
   background-color: white;
   padding: 0 20px;
@@ -54,7 +54,7 @@ body {
 
 .logotypeText {
   color: white;
-  font-size: 60px;
+  font-size: 4rem;
 }
 
 .logoCat {
@@ -67,19 +67,18 @@ body {
   height: 100%;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .postContainer {
-  width: 600px;
+  width: 50%;
   height: 500px;
   background-color: rgba(0, 0, 0, 0.582);
   margin-top: 50px;
-  margin-left: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .postWrapper {
@@ -143,7 +142,7 @@ body {
 }
 
 .post {
-  height: 240px;
+  height: 60%;
   padding: 20px 20px 0px 20px;
   border: 4px solid green;
   margin: 20px 0px;
@@ -170,7 +169,7 @@ body {
 .btnContainer {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 40%;
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -184,17 +183,18 @@ body {
   text-decoration: underline;
   background-color: #00000000;
   border-radius: 3px;
-  width:80px;
+  width: 10%;
   margin-right: 1rem;
   height: 40px;
   align-items: center;
   transition: background-color 1s;
 }
+
 .deleteBtn {
   cursor: pointer;
   background-color: #00000000;
   border-radius: 3px;
-  width: 100px;
+  width: 25%;
   height: 40px;
   display: flex;
   font-size: 1.5rem;
@@ -212,7 +212,7 @@ body {
   cursor: pointer;
   background-color: #00000000;
   border-radius: 3px;
-  width: 100px;
+  width: 25%;
   height: 40px;
   display: flex;
   font-size: 1.5rem;
@@ -224,4 +224,97 @@ body {
 .editBtn:hover {
   background-color: orange;
   transition: background-color 1s;
+}
+
+@media screen and (max-width: 450px) {
+  .redirectBtn {
+    width: 20px;
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .deleteBtn {
+    width: 20px;
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .editBtn {
+    width: 20px;
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btnContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 1s;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .post {
+    height: 100%;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 20px 20px 0px 20px;
+    border: 4px solid green;
+    margin: 20px 0px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .postContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search {
+    width: 80%;
+    display: flex;
+    background-color: white;
+    padding: 0 20px;
+    margin-top: 1rem;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logotypeText {
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.537);
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

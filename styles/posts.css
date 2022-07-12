@@ -293,8 +293,22 @@ body {
     align-items: center;
   }
   .postBody {
-    overflow: hidden;
+    overflow: scroll;
     text-overflow: ellipsis;
     height: 100px;
   }
+  .postBody::-webkit-scrollbar {
+    width: 8px;
+    height: auto;
+  }
+  .postBody::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  .postBody::-webkit-scrollbar-thumb {
+    background: green;
+  }
+  .postBody::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
 }

@@ -18,7 +18,7 @@ function checkLocationHandler(actionType, data) {
       localStoragePost = data;
       saveToLocalStorage("post", data);
     }
-  } else if (window.location.pathname === "/") {
+  } else if (window.location.pathname === "/" || "index.html") {
     cutToArrayAndMovePaginationList(localStoragePosts);
   }
 }

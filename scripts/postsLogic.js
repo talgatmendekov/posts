@@ -102,6 +102,7 @@ function renderPosts(array = []) {
 
       const postBody = document.createElement("p");
       postBody.innerText = `${item.body}`;
+      postBody.className = 'postBody'
 
       const btnContainer = document.createElement("div");
       btnContainer.className = "btnContainer";

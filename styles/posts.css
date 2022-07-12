@@ -292,4 +292,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .postBody {
+    text-overflow: ellipsis;
+    height: 40px;
+    word-wrap: break-word;
+  }
 }

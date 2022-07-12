@@ -9,7 +9,7 @@ function removeModalWrapper(actionType, data) {
 function checkLocationHandler(actionType, data) {
   if (window.location.pathname === "/post.html") {
     if (actionType === "delete") {
-      window.location.pathname = "http://127.0.0.1:5500/";
+      window.location.pathname = "/";
     } else if (actionType === "edit") {
       console.log(data);
       email.innerText = data.email;
@@ -18,7 +18,7 @@ function checkLocationHandler(actionType, data) {
       localStoragePost = data;
       saveToLocalStorage("post", data);
     }
-  } else if (window.location.pathname === "/") {
+  } else if (window.location.pathname === "/index.html") {
     cutToArrayAndMovePaginationList(localStoragePosts);
   }
 }
@@ -38,11 +38,13 @@ function editPostHandler() {
 }
 
 function deletePostHandler() {
-  const filteredArray = localStoragePosts.filter(
-    (item) => item.email !== indicator
-  );
-  localStoragePosts = filteredArray;
-  removeModalWrapper("delete");
+    console.log(localStoragePosts, "before")
+    const filteredArray = localStoragePosts.filter(
+        (item) => item.email !== indicator
+    );
+    localStoragePosts = filteredArray;
+    console.log(localStoragePosts, "after")
+    removeModalWrapper("delete");
 }
 
 function openModalWindowLogic(

@@ -21,12 +21,14 @@ function checkCountries(paginationItem, index) {
 }
 
 function cutToArrayBySize(size, array, selectedArray) {
+  // console.log("ok")
   for (let i = 0; i < Math.ceil(array.length / size); i++) {
     selectedArray[i] = array.slice(i * size, i * size + size);
   }
 }
 
 function cutToArrayAndMovePaginationList(array) {
+  console.log("ok")
   cutToArrayBySize(10, array, posts);
   if (posts.length > 0) {
     movePaginationList(posts, selectedIndex);
@@ -80,8 +82,7 @@ async function getMessages() {
 
 function redirectToPost(data) {
   saveToLocalStorage("post", data);
-  window.location.href = "http://127.0.0.1:5500/post.html";
-  // window.location;
+  window.location.pathname = "/post.html";
 }
 
 function renderPosts(array = []) {

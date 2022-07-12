@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 450px) {
   .modalWindowWrapper {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     height: 100vh;
     left: 50%;

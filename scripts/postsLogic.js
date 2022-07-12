@@ -80,8 +80,8 @@ async function getMessages() {
 
 function redirectToPost(data) {
   saveToLocalStorage("post", data);
-  //   window.location.href = "http://127.0.0.1:5500/post.html"
-  window.location;
+  window.location.href = "http://127.0.0.1:5500/post.html";
+  // window.location;
 }
 
 function renderPosts(array = []) {
@@ -114,7 +114,7 @@ function renderPosts(array = []) {
       const deleteBtn = document.createElement("btn");
       deleteBtn.className = "deleteBtn";
       deleteBtn.innerText = "delete";
-      deleteBtn.addEventListener("click", () => opentDeleteModalWindow(item));
+      deleteBtn.addEventListener("click", () => openDeleteModalWindow(item));
 
       btnContainer.append(editBtn, deleteBtn);
       post.append(postAuthor, postName, postBody, btnContainer);

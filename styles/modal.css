@@ -1,8 +1,9 @@
 .modalWindowWrapper {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.482);
+    height: 100vh;
+    position: fixed;
+    z-index: 30;
+    backdrop-filter: blur(5px);
     margin: 0;
     padding: 0;
     display: flex;

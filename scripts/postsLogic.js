@@ -28,7 +28,7 @@ function cutToArrayBySize(size, array, selectedArray) {
 }
 
 function cutToArrayAndMovePaginationList(array) {
-  console.log("ok")
+  console.log("ok");
   cutToArrayBySize(10, array, posts);
   if (posts.length > 0) {
     movePaginationList(posts, selectedIndex);
@@ -95,7 +95,6 @@ function renderPosts(array = []) {
       const postName = document.createElement("p");
       postName.className = "postName";
       postName.innerText = `${item.name}`;
-      postName.addEventListener("click", () => redirectToPost(item));
 
       const postAuthor = document.createElement("p");
       postAuthor.className = "postAuthor";
@@ -112,12 +111,17 @@ function renderPosts(array = []) {
       editBtn.innerText = "edit";
       editBtn.addEventListener("click", () => openEditModalWindow(item));
 
+      const redirectBtn = document.createElement("btn");
+      redirectBtn.className = "redirectBtn";
+      redirectBtn.innerText = "Redirect";
+      redirectBtn.addEventListener("click", () => redirectToPost(item));
+
       const deleteBtn = document.createElement("btn");
       deleteBtn.className = "deleteBtn";
       deleteBtn.innerText = "delete";
       deleteBtn.addEventListener("click", () => openDeleteModalWindow(item));
 
-      btnContainer.append(editBtn, deleteBtn);
+      btnContainer.append(redirectBtn, editBtn, deleteBtn);
       post.append(postAuthor, postName, postBody, btnContainer);
 
       return postWrapper.append(post);

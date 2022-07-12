@@ -45,11 +45,6 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 450px) {
-  .questionText {
-    width: 250px;
-  }
-}
 .textFieldMW {
   width: 380px;
   margin: 0 auto;
@@ -58,11 +53,6 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 450px) {
-  .textFieldMW {
-    width: 230px;
-  }
-}
 .editAgreeBtn {
   width: 100px;
   height: 30px;
@@ -100,17 +90,28 @@
 }
 
 @media screen and (max-width: 450px) {
-    .modalWindowWrapper {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        z-index: 30;
-        backdrop-filter: blur(5px);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
+  .modalWindowWrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 30;
+    backdrop-filter: blur(5px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+@media screen and (max-width: 450px) {
+  .questionText {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+    .textFieldMW {
+      width: 230px;
+    }
+  }

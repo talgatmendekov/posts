@@ -1,86 +1,100 @@
 .modalWindowWrapper {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 30;
-    backdrop-filter: blur(5px);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 30;
+  backdrop-filter: blur(5px);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modalWindowContainer {
-    min-width: 400px;
-    background-color: white;
-    position: fixed;
+  min-width: 400px;
+  background-color: white;
+  position: fixed;
 }
 
+@media screen and (max-width: 450px) {
+  .modalWindowContainer {
+    min-width: 250px;
+  }
+}
 .editModalWindow {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  padding: 30px;
 }
 
 .deleteModalWindow {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .questionText {
-    font-weight: 900;
-    font-family: cursive;
-    width: 400px;
-    text-align: center;
-    margin-bottom: 20px;
+  font-weight: 900;
+  font-family: cursive;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+@media screen and (max-width: 450px) {
+  .questionText {
+    width: 250px;
+  }
+}
 .textFieldMW {
-    width: 380px;
-    margin: 0 auto;
-    height: 40px;
-    padding: 0 30px;
-    font-weight: 600;
+  width: 380px;
+  margin: 0 auto;
+  height: 40px;
+  padding: 0 30px;
+  font-weight: 600;
 }
 
+@media screen and (max-width: 450px) {
+  .textFieldMW {
+    width: 230px;
+  }
+}
 .editAgreeBtn {
-    width: 100px;
-    height: 30px;
-    margin: 0 auto;
-    background-color: orange;
-    border: none;
-    font-size: 20px;
-    font-family: cursive;
-    cursor: pointer;
-    transition: background-color 1s;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: orange;
+  border: none;
+  font-size: 20px;
+  font-family: cursive;
+  cursor: pointer;
+  transition: background-color 1s;
 }
 
 .editAgreeBtn:hover {
-    background-color: #f9cb74;
-    transition: background-color 1s;
+  background-color: #f9cb74;
+  transition: background-color 1s;
 }
 
-
 .deleteAgreeBtn {
-    width: 100px;
-    height: 40px;
-    margin-left: auto;
-    background-color: red;
-    border: none;
-    font-size: 20px;
-    font-family: cursive;
-    cursor: pointer;
-    transition: background-color 1s;
-    color: white;
-    font-weight: 600;
+  width: 100px;
+  height: 40px;
+  margin-left: auto;
+  background-color: red;
+  border: none;
+  font-size: 20px;
+  font-family: cursive;
+  cursor: pointer;
+  transition: background-color 1s;
+  color: white;
+  font-weight: 600;
 }
 
 .deleteAgreeBtn:hover {
-    background-color: rgb(255, 103, 103);
-    transition: background-color 1s;
+  background-color: rgb(255, 103, 103);
+  transition: background-color 1s;
 }

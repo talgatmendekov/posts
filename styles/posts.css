@@ -169,7 +169,7 @@ body {
 .btnContainer {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 80%;
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 10px;

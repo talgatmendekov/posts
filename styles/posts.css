@@ -293,8 +293,8 @@ body {
     align-items: center;
   }
   .postBody {
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    height: 100px;
-    
   }
 }

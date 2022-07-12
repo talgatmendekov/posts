@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 450px) {
   .modalWindowWrapper {
-    width: 100%;
+    width: 300px;
     height: 100vh;
     position: fixed;
     z-index: 30;
@@ -102,10 +102,7 @@
     justify-content: center;
     align-items: center;
   }
-  body {
-    width: 450px;
-    min-height: 100vh;
-  }
+ 
   .modalWindowContainer {
     min-width: 50%;
     background-color: white;

@@ -227,10 +227,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  body {
-    width: 450px;
-    height: 100vh;
-  }
+ 
   .redirectBtn {
     width: 16px;
     font-size: 1rem;

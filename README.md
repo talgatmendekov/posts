@@ -1,4 +1,4 @@
-# Posts by Vanilla JavaScript
+# Posts  app by Vanilla JavaScript
 
 A front-end vanilla app to search edit and delete posts
 

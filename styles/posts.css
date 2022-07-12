@@ -228,21 +228,21 @@ body {
 
 @media screen and (max-width: 450px) {
   .redirectBtn {
-    width: 20px;
+    width: 16px;
     font-size: 1rem;
     margin: 0;
   }
 }
 @media screen and (max-width: 450px) {
   .deleteBtn {
-    width: 20px;
+    width: 16px;
     font-size: 1rem;
     margin: 0;
   }
 }
 @media screen and (max-width: 450px) {
   .editBtn {
-    width: 20px;
+    width: 16px;
     font-size: 1rem;
     margin: 0;
   }
